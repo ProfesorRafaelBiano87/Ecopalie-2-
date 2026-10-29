@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#430810">
+<title>ECOPALIE | Banco de Sustentabilidade</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-shell">
+<aside class="sidebar" id="sidebar">
+<div class="brand">
+<img src="assets/logo.jpg" alt="Símbolo ECOPALIE">
+<div>
+<strong>ECOPALIE</strong>
+<small>Banco de Sustentabilidade</small>
+</div>
+</div>
+<nav aria-label="Menu principal">
+<button class="nav-link active" data-page="inicio">◈ <span>Visão geral</span></button>
+<button class="nav-link" data-page="acoes">♻ <span>Minhas ações</span></button>
+<button class="nav-link" data-page="historico">▤ <span>Histórico</span></button>
+<button class="nav-link" data-page="impacto">◉ <span>Meu impacto</span></button>
+<button class="nav-link" data-page="loja">✧ <span>Loja de vantagens</span></button>
+<button class="nav-link" data-page="clinica">✓ <span>Área da clínica</span></button>
+</nav>
+<div class="side-note">
+<span>✦</span>
+<p>Pequenas atitudes.<br>Grandes transformações.</p>
+</div>
+</aside>
+<div class="main-wrap">
+<header class="topbar">
+<button id="menuToggle" class="menu-toggle" aria-label="Abrir menu">☰</button>
+<div class="top-title">
+<span class="eyebrow">SEU ESPAÇO SUSTENTÁVEL</span>
+<strong id="topPage">Visão geral</strong>
+</div>
+<div class="top-actions">
+<span class="status"><i></i> Programa ativo</span>
+<div class="avatar" aria-label="Perfil de demonstração">EC</div>
+</div>
+</header>
+<main id="mainContent">
+<section class="page active" id="inicio">
+<div class="hero">
+<div class="hero-copy">
+<span class="hero-label">✦ BEM-VINDO À ECOPALIE</span>
+<h1>Suas atitudes fazem<br><em>o futuro florescer.</em></h1>
+<p>Transforme escolhas sustentáveis em Eco-Moedas e aproveite benefícios especiais na sua clínica.</p>
+<button class="btn btn-gold" data-go="acoes">Registrar uma ação <span>↗</span></button>
+</div>
+<div class="hero-art">
+<div class="orbit orbit-one"></div>
+<div class="orbit orbit-two"></div>
+<div class="hero-coin">
+<img src="assets/logo.jpg" alt="Logomarca ECOPALIE">
+</div>
+<span class="spark spark-one">✧</span>
+<span class="spark spark-two">✦</span>
+</div>
+</div>
+<div class="section-heading">
+<div>
+<span class="eyebrow">SEU PAINEL</span>
+<h2>Um impacto que vale a pena</h2>
+</div>
+<span class="muted">Dados desta demonstração</span>
+</div>
+<div class="stats">
+<article class="stat-card accent">
+<div class="stat-icon">✦</div>
+<span>Saldo de Eco-Moedas</span>
+<strong id="balanceHome">0</strong>
+<small>Disponíveis para trocar</small>
+</article>
+<article class="stat-card">
+<div class="stat-icon">♻</div>
+<span>Embalagens recicladas</span>
+<strong id="packagesHome">0</strong>
+<small>Unidades devolvidas</small>
+</article>
+<article class="stat-card">
+<div class="stat-icon">◉</div>
+<span>Plástico evitado</span>
+<strong id="plasticHome">0 g</strong>
+<small>Estimativa ilustrativa</small>
+</article>
+</div>
+<div class="two-cols">
+<article class="panel">
+<div class="panel-head">
+<div>
+<span class="eyebrow">COMECE AGORA</span>
+<h3>Atitudes que transformam</h3>
+</div>
+</div>
+<div class="action-preview">
+<span class="round-icon">♻</span>
+<div>
+<strong>Devolver embalagens</strong>
+<small>Entregue embalagens vazias para reciclagem</small>
+</div>
+<span class="arrow">↗</span>
+</div>
+<div class="action-preview">
+<span class="round-icon">🚲</span>
+<div>
+<strong>Transporte sustentável</strong>
+<small>Venha a pé, de bicicleta, ônibus ou carona</small>
+</div>
+<span class="arrow">↗</span>
+</div>
+<div class="action-preview">
+<span class="round-icon">🥤</span>
+<div>
+<strong>Evitar descartáveis</strong>
+<small>Traga sua própria garrafa ou sacola</small>
+</div>
+<span class="arrow">↗</span>
+</div>
+<button class="text-link" data-go="acoes">Ver todas as ações →</button>
+</article>
+<article class="panel rewards-teaser">
+<div>
+<span class="eyebrow">RECOMPENSAS EXCLUSIVAS</span>
+<h3>O bem que você faz<br>volta para você.</h3>
+<p>Acumule Eco-Moedas e troque por descontos, procedimentos complementares e presentes.</p>
+<button class="btn btn-outline" data-go="loja">Explorar vantagens ↗</button>
+</div>
+<div class="gift">✧</div>
+</article>
+</div>
+</section>
+<section class="page" id="acoes">
+<div class="page-intro">
+<span class="eyebrow">ATITUDES CONSCIENTES</span>
+<h1>Minhas ações</h1>
+<p>Selecione uma ação realizada. A clínica deverá confirmar antes de creditar suas Eco-Moedas.</p>
+</div>
+<div class="action-grid" id="actionCards"></div>
+<div class="info-strip">ⓘ As pontuações exibidas são ilustrativas e podem ser ajustadas pela clínica.</div>
+</section>
+<section class="page" id="historico">
+<div class="page-intro">
+<span class="eyebrow">SUA JORNADA</span>
+<h1>Histórico de atividades</h1>
+<p>Acompanhe suas ações, aprovações e trocas de benefícios.</p>
+</div>
+<div class="panel">
+<div class="panel-head">
+<h3>Movimentações</h3>
+<span class="muted" id="historyCount"></span>
+</div>
+<div id="historyList" class="history-list"></div>
+</div>
+</section>
+<section class="page" id="impacto">
+<div class="page-intro">
+<span class="eyebrow">CADA GESTO CONTA</span>
+<h1>Meu impacto</h1>
+<p>Veja como suas ações ajudam a reduzir resíduos e incentivar escolhas mais conscientes.</p>
+</div>
+<div class="stats">
+<article class="stat-card">
+<div class="stat-icon">♻</div>
+<span>Embalagens recicladas</span>
+<strong id="impactPackages">0</strong>
+<small>Unidades</small>
+</article>
+<article class="stat-card">
+<div class="stat-icon">◉</div>
+<span>Plástico evitado</span>
+<strong id="impactPlastic">0 g</strong>
+<small>Estimativa demonstrativa</small>
+</article>
+<article class="stat-card">
+<div class="stat-icon">✦</div>
+<span>Ações confirmadas</span>
+<strong id="impactActions">0</strong>
+<small>Atitudes sustentáveis</small>
+</article>
+</div>
+<div class="panel impact-panel">
+<div class="impact-symbol">❀</div>
+<div>
+<span class="eyebrow">NOSSO PROPÓSITO</span>
+<h3>Seu cuidado vai além de você.</h3>
+<p>Menos desperdício, mais reciclagem e uma relação mais sustentável com a sua clínica.</p>
+</div>
+</div>
+</section>
+<section class="page" id="loja">
+<div class="page-intro">
+<span class="eyebrow">SUAS CONQUISTAS</span>
+<h1>Loja de vantagens</h1>
+<p>Troque suas Eco-Moedas por benefícios especiais.</p>
+</div>
+<div class="wallet-strip">
+<span>✦ Seu saldo disponível</span>
+<strong><span id="shopBalance">0</span> Eco-Moedas</strong>
+</div>
+<div class="reward-grid" id="rewardCards"></div>
+<div class="info-strip">ⓘ Benefícios e valores são exemplos para a demonstração e dependem da política da clínica.</div>
+</section>
+<section class="page" id="clinica">
+<div class="page-intro">
+<span class="eyebrow">PAINEL DEMONSTRATIVO</span>
+<h1>Área da clínica</h1>
+<p>Confirme ações realizadas pelos pacientes para liberar as Eco-Moedas.</p>
+</div>
+<div class="stats">
+<article class="stat-card">
+<div class="stat-icon">◷</div>
+<span>Aguardando confirmação</span>
+<strong id="pendingCount">0</strong>
+<small>Solicitações pendentes</small>
+</article>
+<article class="stat-card">
+<div class="stat-icon">✓</div>
+<span>Ações confirmadas</span>
+<strong id="approvedCount">0</strong>
+<small>Nesta demonstração</small>
+</article>
+</div>
+<div class="panel">
+<div class="panel-head"><h3>Solicitações recebidas</h3></div>
+<div id="pendingList"></div>
+</div>
+<div class="info-strip">ⓘ Nesta versão, o painel é apenas uma simulação local. Não há autenticação ou validação por uma clínica real.</div>
+</section>
+</main>
+<footer>© <span id="year"></span> ECOPALIE · Pequenas atitudes, grandes transformações.</footer>
+</div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
